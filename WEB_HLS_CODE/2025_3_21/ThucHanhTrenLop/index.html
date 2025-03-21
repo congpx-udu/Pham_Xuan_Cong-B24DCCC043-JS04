@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Đơn Giản</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <div class="title">
+      <h3>PT Ứng dụng Web - THIẾT KẾ FORM ĐƠN GIẢN</h3>
+    </div>
+    <form class="thongtin">
+      <table>
+        <tr>
+          <td>Họ và tên</td>
+          <td><input type="text" name="fullname" /></td>
+        </tr>
+        <tr>
+          <td>Email</td>
+          <td><input type="email" name="email" /></td>
+        </tr>
+        <tr>
+          <td>Số điện thoại</td>
+          <td><input type="tel" name="dt" /></td>
+        </tr>
+        <tr>
+          <td>Quê quán</td>
+          <td>
+            <select name="city">
+              <option value="">--Chọn thành phố--</option>
+              <option value="hanoi">Hà Nội</option>
+              <option value="danang">Đà Nẵng</option>
+              <option value="hcm">Hồ Chí Minh</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Giới tính</td>
+          <td>
+            <input type="radio" name="gioitinh" value="Nam" /> Nam
+            <input type="radio" name="gioitinh" value="Nu" /> Nữ
+          </td>
+        </tr>
+        <tr>
+          <td>Kỹ năng</td>
+          <td>
+            <input type="checkbox" name="skills" value="html" /> HTML
+            <input type="checkbox" name="skills" value="css" /> CSS
+            <input type="checkbox" name="skills" value="js" /> JS
+            <input type="checkbox" name="skills" value="bootstrap" /> BOOTSTRAP
+          </td>
+        </tr>
+        <tr>
+          <td>Ngày sinh</td>
+          <td><input type="date" name="ngaysinh" /></td>
+        </tr>
+        <tr>
+          <td>Giới thiệu bản thân</td>
+          <td><textarea name="about" rows="8" cols="40"></textarea></td>
+        </tr>
+      </table>
+      <div class="btn">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+      </div>
+    </form>
+  </body>
+</html>
