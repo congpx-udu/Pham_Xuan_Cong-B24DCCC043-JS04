@@ -43,6 +43,16 @@ h1 {
   width: 100%;
 }
 
+#top {
+  border-top: 4px solid #bc6c26;
+  border-radius: 8px;
+}
+
+#bottom {
+  border-bottom: 4px solid #bc6c26;
+  border-radius: 8px;
+}
+
 .moring,
 .afternoon,
 .evening {
@@ -69,7 +79,7 @@ h1 {
   padding: 0 16px;
   height: 100%;
   width: 100%;
-  border-radius: 8px;
+  border-radius: 6px;
   cursor: pointer;
   transition: 0.3s;
 }
