@@ -28,6 +28,7 @@ h1 {
   flex-direction: column;
   gap: 50px;
   padding: 20px;
+  text-align: center;
 }
 
 #container .form {
