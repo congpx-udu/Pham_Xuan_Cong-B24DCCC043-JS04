@@ -114,3 +114,8 @@ input:checked + .todo-content .checkmark {
 .todo-list > div:nth-child(odd) .todo-content {
   border-left: 6px solid #000;
 }
+
+.note p[data-type="reminder"] {
+  font-style: italic;
+  color: #6a995b;
+}
