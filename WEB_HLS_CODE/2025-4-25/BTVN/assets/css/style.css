@@ -64,13 +64,17 @@ html {
   width: 60%;
 }
 
-#content .left img {
-  width: 40px;
-}
-
 #content .left h1 {
   font-size: 40px;
-  padding: 0 24px;
+  padding: 0 48px;
+  position: relative;
+}
+
+#content .left img {
+  width: 40px;
+  position: absolute;
+  top: 6%;
+  left: 0;
 }
 
 #content .left p {
