@@ -64,6 +64,10 @@ html {
   width: 60%;
 }
 
+#content .left img {
+  width: 40px;
+}
+
 #content .left h1 {
   font-size: 40px;
   padding: 0 24px;
