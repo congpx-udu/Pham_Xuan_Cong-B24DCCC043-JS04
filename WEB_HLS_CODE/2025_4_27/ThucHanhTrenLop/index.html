@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ví dụ flexbox</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+      }
+      h1 {
+        color: rgb(187, 106, 106);
+      }
+      h2 {
+        margin-top: 40px;
+        color: #333;
+      }
+
+      .container {
+        display: flex;
+        background: #dfd9d9;
+        padding: 10px;
+        margin-bottom: 30px;
+        height: 120px;
+        border: 1px solid #ccc;
+      }
+
+      .item1 {
+        background: #e74c3c;
+        width: 60px;
+        height: 60px;
+      }
+      .item2 {
+        background: #2ecc71;
+        width: 80px;
+        height: 100px;
+      }
+      .item3 {
+        background: #3498db;
+        width: 100px;
+        height: 60px;
+      }
+      .item4 {
+        background: #f1c40f;
+        width: 70px;
+        height: 70px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>justify-content</h1>
+
+    <h2>justify-content: flex-start;</h2>
+    <div class="container" style="justify-content: flex-start">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+    </div>
+
+    <h2>justify-content: flex-end;</h2>
+    <div class="container" style="justify-content: flex-end">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+    </div>
+
+    <h2>justify-content: center;</h2>
+    <div class="container" style="justify-content: center">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+    </div>
+
+    <h2>justify-content: space-between;</h2>
+    <div class="container" style="justify-content: space-between">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+    </div>
+
+    <h2>justify-content: space-around;</h2>
+    <div class="container" style="justify-content: space-around">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+    </div>
+
+    <h2>justify-content: space-evenly;</h2>
+    <div class="container" style="justify-content: space-evenly">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+    </div>
+    <h1>align-items</h1>
+    <h2>align-items: flex-start;</h2>
+    <div
+      class="container"
+      style="align-items: flex-start; flex-wrap: wrap; height: 200px"
+    >
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+    </div>
+    <h2>align-items: flex-end;</h2>
+    <div
+      class="container"
+      style="align-items: flex-end; flex-wrap: wrap; height: 200px"
+    >
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+    </div>
+    <h2>align-items: center;</h2>
+    <div
+      class="container"
+      style="align-items: center; flex-wrap: wrap; height: 200px"
+    >
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+    </div>
+  </body>
+</html>
