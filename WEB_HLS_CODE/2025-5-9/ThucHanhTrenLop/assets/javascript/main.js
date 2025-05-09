@@ -32,4 +32,6 @@ switch (age) {
     break;
   case 20:
     console.log("tuổi lấy vợ");
+  default:
+    console.log("không biết");
 }
