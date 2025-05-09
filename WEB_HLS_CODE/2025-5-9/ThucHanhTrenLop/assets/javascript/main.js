@@ -22,3 +22,14 @@ if (number === 10) {
 for (var i = 0; i < 4; i++) {
   console.log(`học ptit ${i} năm`);
 }
+
+switch (age) {
+  case 15:
+    console.log("tuổi vị thành niên");
+    break;
+  case 18:
+    console.log("tuổi trưởng thành");
+    break;
+  case 20:
+    console.log("tuổi lấy vợ");
+}
