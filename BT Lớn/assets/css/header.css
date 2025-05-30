@@ -64,7 +64,7 @@
   font-size: 20px;
 }
 
-#header #nav .nav-item .login {
+.login {
   display: none;
   position: absolute;
   top: 28px;
@@ -72,31 +72,27 @@
   width: 200px;
   height: 100px;
   background: #fff;
-}
-
-#header #nav .nav-item .login {
-  display: none;
   text-align: end;
   padding: 5px;
 }
 
-#header #nav .nav-item .login a {
+.login a {
   color: #4e4e4e;
   font-size: 14px;
 }
 
-#header #nav .nav-item .login a:hover {
+.login a:hover {
   color: #63beeb;
 }
 
-#header #nav .nav-item .login .tk {
+.login .tk {
   padding: 0;
   width: 100%;
   border-bottom: 2px solid #a3a2a2;
   padding-bottom: 10px;
 }
 
-#header #nav .nav-item.taikhoan:hover .login {
+.nav-item.taikhoan:hover .login {
   display: flex;
   align-items: end;
   justify-content: center;
@@ -117,6 +113,10 @@
   flex-direction: row;
   align-items: center;
   border-bottom: 2px solid #d8dbdf;
+}
+
+#menu .here {
+  color: #63beeb;
 }
 
 #menu ul {

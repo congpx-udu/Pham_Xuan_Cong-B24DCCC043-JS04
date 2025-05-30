@@ -3,10 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Giới thiệu Evo Tour</title>
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <title>Tour khuyến mãi</title>
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/tour.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -43,9 +44,9 @@
       <div id="menu">
         <ul>
           <li><a href="index.html">TRANG CHỦ</a></li>
-          <li><a class="here" href="gioithieu.html"> GIỚI THIỆU </a></li>
+          <li><a href="gioithieu.html"> GIỚI THIỆU </a></li>
           <li><a href="tourdulich.html"> TOUR DU LỊCH </a></li>
-          <li><a href="tourkhuyenmai.html">TOUR KHUYẾN MÃI</a></li>
+          <li><a class="here" href="tourkhuyenmai.html">TOUR KHUYẾN MÃI</a></li>
           <li><a href="">TIN TỨC</a></li>
           <li><a href="kinhnghiemdulich.html">KINH NGHIỆM DU LỊCH</a></li>
           <li><a href="faq.html">FAQ</a></li>
@@ -53,11 +54,68 @@
         </ul>
       </div>
       <div id="subnav">
-        <p><a href="index.html">Trang chủ </a>/ <span>Giới thiệu</span></p>
+        <p><a href="index.html">Trang chủ </a>/ <span>Tour khuyến mãi</span></p>
       </div>
-      <div id="subcontent">
-        <div class="ct-title"><h3>Giới thiệu</h3></div>
-        <div class="ct">Nội dung đang cập nhật.</div>
+      <div id="banner">
+        <img src="./assets/img/cat-banner-2.webp" alt="" />
+      </div>
+      <div id="cont">
+        <div id="tinhnang">
+          <div class="sub-tinhnang">
+            <form action="">
+              <div class="input-group">
+                <i class="fa-solid fa-location-dot"></i>
+                <input type="text" placeholder="Bạn muốn đi đâu?" />
+              </div>
+
+              <div class="input-group">
+                <i class="fa-solid fa-calendar-days"></i>
+                <div class="date-group">
+                  <label>Ngày khởi hành</label>
+                  <input type="date" />
+                </div>
+              </div>
+
+              <div class="input-group">
+                <i class="fa-solid fa-paper-plane"></i>
+                <div class="select-group">
+                  <label>Khởi hành từ</label>
+                  <select name="noikhoihanh">
+                    <option value="">Tất cả</option>
+                    <option value="Hà Nội">Hà Nội</option>
+                    <option value="Đà Nẵng">Đà Nẵng</option>
+                    <option value="Hồ Chí Minh">Hồ Chính Minh</option>
+                  </select>
+                </div>
+              </div>
+              <button type="submit" class="btn-tim">TÌM</button>
+            </form>
+          </div>
+        </div>
+        <div class="sort-ct">
+          <div class="sub-sort-ct">
+            <span><strong>Xếp theo:</strong></span>
+            <label>
+              <input type="radio" name="sort" value="az" checked />
+              Tên A-Z
+            </label>
+            <label>
+              <input type="radio" name="sort" value="za" />
+              Tên Z-A
+            </label>
+            <label>
+              <input type="radio" name="sort" value="price-asc" />
+              Giá tăng dần
+            </label>
+            <label>
+              <input type="radio" name="sort" value="price-desc" />
+              Giá giảm dần
+            </label>
+          </div>
+        </div>
+        <div id="subcontent">
+          <div class="ct">Nội dung đang cập nhật.</div>
+        </div>
       </div>
       <div id="footer">
         <div class="ft-top">

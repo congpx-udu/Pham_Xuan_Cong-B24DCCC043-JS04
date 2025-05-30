@@ -277,3 +277,14 @@ a {
   align-items: center;
   padding: 0 50px;
 }
+
+.content-faq {
+  margin-top: 50px;
+  padding: 20px 200px;
+}
+
+.content-faq h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 20px;
+}

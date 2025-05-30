@@ -1,0 +1,113 @@
+.cont {
+  background: #ff5722;
+}
+
+#banner {
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+#banner img {
+  width: 100%;
+  height: auto;
+}
+
+#tinhnang {
+  background: #f5f6f8;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-tinhnang form {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background: #f5f6f8;
+  border-radius: 8px;
+  padding: 10px;
+  gap: 10px;
+  min-width: 200px;
+}
+
+.input-group i {
+  font-size: 20px;
+  color: #777;
+}
+
+.input-group input[type="text"],
+.input-group input[type="date"],
+.input-group select {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+}
+
+.date-group label,
+.select-group label {
+  display: block;
+  font-size: 13px;
+  color: #888;
+}
+
+.btn-tim {
+  width: 200px;
+  background: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn-tim:hover {
+  background: #ee3900;
+}
+
+.sort-ct {
+  margin: 10px 0;
+  padding: 0 200px;
+  background: #f5f6f8;
+  box-shadow: 0 0 0 200px #f5f6f8;
+}
+
+.sub-sort-ct {
+  background: #ffffff;
+  border-radius: 8px;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-family: sans-serif;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.sub-sort-ct label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #333;
+}
+
+.sub-sort-ct input[type="radio"] {
+  accent-color: #007bff;
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+}
