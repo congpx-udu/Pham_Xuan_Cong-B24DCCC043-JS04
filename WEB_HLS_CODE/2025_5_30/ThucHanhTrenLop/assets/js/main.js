@@ -2,8 +2,8 @@ student = { id: "B24DCCC043", name: "Phạm Xuân Công", salary: 40000000 };
 document.writeln(student.id + " " + student.name + " " + student.salary);
 
 var student = new Object();
-student.id = "B24DCCC037";
-student.name = "Đặng Thị Bích";
+student.id = "B24DCCC043";
+student.name = "Phạm Xuân Công";
 student.salary = 4000;
 document.writeln(student.id + " " + student.name + " " + student.salary);
 
