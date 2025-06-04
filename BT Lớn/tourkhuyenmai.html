@@ -6,7 +6,7 @@
     <title>Tour khuyến mãi</title>
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
-    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/gioithieu.css" />
     <link rel="stylesheet" href="./assets/css/tour.css" />
     <link
       rel="stylesheet"
@@ -65,7 +65,37 @@
             <form action="">
               <div class="input-group">
                 <i class="fa-solid fa-location-dot"></i>
-                <input type="text" placeholder="Bạn muốn đi đâu?" />
+                <input
+                  type="text"
+                  id="destination-input"
+                  placeholder="Bạn muốn đi đâu?"
+                  autocomplete="off"
+                />
+                <ul
+                  id="suggestions"
+                  class="suggestions-list"
+                  style="display: none"
+                ></ul>
+                <style>
+                  .suggestions-list {
+                    position: absolute;
+                    background: #fff;
+                    border: 1px solid #ccc;
+                    margin-top: 2px;
+                    list-style: none;
+                    padding: 0;
+                    width: 100%;
+                    max-width: 250px;
+                    z-index: 1000;
+                  }
+                  .suggestions-list li {
+                    padding: 8px 12px;
+                    cursor: pointer;
+                  }
+                  .suggestions-list li:hover {
+                    background: #f0f0f0;
+                  }
+                </style>
               </div>
 
               <div class="input-group">
@@ -211,5 +241,6 @@
         </div>
       </div>
     </div>
+    <script src="./assets/js/main.js"></script>
   </body>
 </html>
