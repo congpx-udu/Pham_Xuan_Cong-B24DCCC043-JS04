@@ -126,3 +126,9 @@
   background: #1789c2;
   cursor: pointer;
 }
+
+.map {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  width: 100%;
+}

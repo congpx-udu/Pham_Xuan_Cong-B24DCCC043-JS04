@@ -64,6 +64,10 @@
   font-size: 20px;
 }
 
+#header #nav .nav-item > a {
+  color: #000;
+}
+
 .login {
   display: none;
   position: absolute;

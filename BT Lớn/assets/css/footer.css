@@ -26,21 +26,29 @@
   color: #888888;
 }
 
+#footer .ft-top .dangky {
+  position: relative;
+}
+
 #footer .ft-top .dangky input {
   width: 400px;
   height: 40px;
   border: none;
-  border-radius: 4px;
+  border-radius: 4px 0px 0px 4px;
   outline: none;
   box-shadow: none;
   padding: 0 40px;
 }
 
 #footer .ft-top .dangky button {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  right: 100;
   width: 100px;
   height: 40px;
   border: none;
-  border-radius: 4px;
+  border-radius: 0px 4px 4px 0px;
   color: #fff;
   background-color: #63beeb;
 }
