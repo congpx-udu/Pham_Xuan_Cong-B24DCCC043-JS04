@@ -1,26 +1,30 @@
 const fs = require("fs").promises;
 const path = require("path");
 
-const USERS_PATH = path.join(__dirname, "users.json");
+const usersPath = path.join(__dirname, "users.json");
+const cartPath = path.join(__dirname, "data", "cart.json"); // Đường dẫn chính xác
 
 async function readUsers() {
-  try {
-    const data = await fs.readFile(USERS_PATH, "utf8");
-    return JSON.parse(data);
-  } catch (err) {
-    return [];
-  }
+  const data = await fs.readFile(usersPath, "utf-8");
+  return JSON.parse(data || "[]");
 }
 
 async function writeUsers(users) {
-  try {
-    await fs.writeFile(USERS_PATH, JSON.stringify(users, null, 2));
-  } catch (err) {
-    console.error("Lỗi ghi file:", err);
-  }
+  await fs.writeFile(usersPath, JSON.stringify(users, null, 2));
+}
+
+async function readCart() {
+  const data = await fs.readFile(cartPath, "utf-8");
+  return JSON.parse(data || "[]");
+}
+
+async function writeCart(cart) {
+  await fs.writeFile(cartPath, JSON.stringify(cart, null, 2));
 }
 
 module.exports = {
   readUsers,
   writeUsers,
+  readCart,
+  writeCart,
 };

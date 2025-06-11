@@ -1,17 +1,12 @@
 [
   {
-    "name": "Phạm Xuân Công",
-    "email": "pxc0205@gmail.com",
-    "password": "cong1234"
-  },
-  {
-    "name": "Đặng Thị Bích",
-    "email": "dangbich274@gmail.com",
-    "password": "bich2704"
-  },
-  {
     "name": "admin",
     "email": "admin@gmail.com",
     "password": "123456"
+  },
+  {
+    "name": "Phạm Xuân Công",
+    "email": "pxc0205@gmail.com",
+    "password": "cong1234"
   }
 ]

@@ -1,25 +1,26 @@
 const user = JSON.parse(sessionStorage.getItem("user"));
-const taikhoan = document.querySelector(".nav-item.taikhoan");
-const taikhoanText = taikhoan.querySelector("p");
-const loginBox = taikhoan.querySelector(".login");
+const taiKhoan = document.querySelector(".nav-item.taikhoan");
+const taiKhoanText = taiKhoan.querySelector("p");
+const loginBox = taiKhoan.querySelector(".login");
 
 function showLoggedIn(user) {
-  taikhoanText.textContent = user.name || user.email || "Tài khoản";
+  taiKhoanText.textContent = user.name || user.email || "Tài khoản";
 
   loginBox.innerHTML = `
     <div class="logout"><a href="#" id="logout-link">Đăng xuất</a></div>
   `;
   loginBox.style.display = "none";
 
-  taikhoan.addEventListener("mouseenter", () => {
+  taiKhoan.addEventListener("mouseenter", () => {
     loginBox.style.display = "block";
   });
-  taikhoan.addEventListener("mouseleave", () => {
+
+  taiKhoan.addEventListener("mouseleave", () => {
     loginBox.style.display = "none";
   });
 
-  const logoutLink = document.getElementById("logout-link");
-  logoutLink.addEventListener("click", (e) => {
+  const logOutLink = document.getElementById("logout-link");
+  logOutLink.addEventListener("click", (e) => {
     e.preventDefault();
     sessionStorage.removeItem("user");
     showLoggedOut();
@@ -27,7 +28,7 @@ function showLoggedIn(user) {
 }
 
 function showLoggedOut() {
-  taikhoanText.textContent = "Tài khoản";
+  taiKhoanText.textContent = "Tài khoản";
 
   loginBox.innerHTML = `
     <div class="tk"><a href="./login.html">Đăng nhập</a></div>
@@ -35,14 +36,15 @@ function showLoggedOut() {
   `;
   loginBox.style.display = "none";
 
-  taikhoan.addEventListener("mouseenter", () => {
+  taiKhoan.addEventListener("mouseenter", () => {
     loginBox.style.display = "flex";
     loginBox.style.flexDirection = "column";
     loginBox.style.alignItems = "end";
     loginBox.style.justifyContent = "center";
     loginBox.style.gap = "10px";
   });
-  taikhoan.addEventListener("mouseleave", () => {
+
+  taiKhoan.addEventListener("mouseleave", () => {
     loginBox.style.display = "none";
   });
 }
@@ -50,5 +52,5 @@ function showLoggedOut() {
 if (user) {
   showLoggedIn(user);
 } else {
-  showLoggedOut();
+  showLoggedOut;
 }
