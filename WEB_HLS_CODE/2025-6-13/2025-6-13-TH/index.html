@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 10</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Trình chiếu ảnh bằng DOM</h1>
+
+      <div class="trinhchieu">
+        <img id="slide" src="./assets/img/anh1.jpg" alt="slide" />
+      </div>
+
+      <div class="dots" id="dots"></div>
+
+      <div class="btn">
+        <button onclick="anhTruocDo()">
+          <i class="fa-solid fa-arrow-left"></i>
+          Trước
+        </button>
+        <button onclick="anhTiepTheo()">
+          Sau
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>
