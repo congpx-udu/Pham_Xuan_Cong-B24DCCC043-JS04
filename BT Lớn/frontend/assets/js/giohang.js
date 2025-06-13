@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const div = document.createElement("div");
         div.className = "cart-item";
 
-        const price = parseInt(item.price.replace(/[^\d]/g, "")); // Bỏ ký tự ₫ và dấu chấm
+        const price = parseInt(item.price.replace(/[^\d]/g, ""));
         total += price;
 
         div.innerHTML = `

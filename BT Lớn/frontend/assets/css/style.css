@@ -182,6 +182,12 @@ a {
 }
 .tour-items .content-items h4 {
   width: 95%;
+  font-size: 14px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .tour-items img {
   width: 100%;

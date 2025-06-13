@@ -37,6 +37,7 @@ function showLoggedOut() {
   loginBox.style.display = "none";
 
   taiKhoan.addEventListener("mouseenter", () => {
+    loginBox.div.style.width = "100%";
     loginBox.style.display = "flex";
     loginBox.style.flexDirection = "column";
     loginBox.style.alignItems = "end";
