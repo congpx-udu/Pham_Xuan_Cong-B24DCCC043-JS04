@@ -2,7 +2,8 @@ const fs = require("fs").promises;
 const path = require("path");
 
 const usersPath = path.join(__dirname, "users.json");
-const cartPath = path.join(__dirname, "data", "cart.json"); // Đường dẫn chính xác
+const cartPath = path.join(__dirname, "data", "cart.json");
+const ordersPath = path.join(__dirname, "data", "orders.json");
 
 async function readUsers() {
   const data = await fs.readFile(usersPath, "utf-8");
@@ -22,9 +23,20 @@ async function writeCart(cart) {
   await fs.writeFile(cartPath, JSON.stringify(cart, null, 2));
 }
 
+async function readOrders() {
+  const data = await fs.readFile(ordersPath, "utf-8");
+  return JSON.parse(data || "[]");
+}
+
+async function writeOrders(orders) {
+  await fs.writeFile(ordersPath, JSON.stringify(orders, null, 2));
+}
+
 module.exports = {
   readUsers,
   writeUsers,
   readCart,
   writeCart,
+  readOrders,
+  writeOrders,
 };

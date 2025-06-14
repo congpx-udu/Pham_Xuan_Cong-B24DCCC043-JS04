@@ -55,10 +55,19 @@ document.addEventListener("DOMContentLoaded", function () {
       });
 
       checkoutBtn.addEventListener("click", function () {
+        const user = JSON.parse(sessionStorage.getItem("user"));
+
+        // Xử lí đặt tour khi chưa đăng nhập
+        if (!user) {
+          alert("Vui lòng đăng nhập trước khi đặt tour!");
+          window.location.href = "./login.html";
+          return;
+        }
+
         alert("Bạn đã đặt tour thành công!");
-        fetch("http://localhost:3000/api/cart/clear", { method: "POST" }).then(
-          () => location.reload()
-        );
+        fetch("http://localhost:3000/api/cart/clear", { method: "POST" })
+          .then(() => location.reload())
+          .catch((err) => console.error("Lỗi khi đặt tour:", err));
       });
     })
     .catch((err) => {

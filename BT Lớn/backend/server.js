@@ -3,7 +3,14 @@ const cors = require("cors");
 const app = express();
 const port = 3000;
 
-const { readUsers, writeUsers, readCart, writeCart } = require("./utils");
+const {
+  readUsers,
+  writeUsers,
+  readCart,
+  writeCart,
+  readOrders,
+  writeOrders,
+} = require("./utils");
 
 app.use(cors());
 app.use(express.json());
@@ -61,8 +68,20 @@ app.delete("/api/cart/:id", async (req, res) => {
 
 // Đặt tour và làm trống giỏ hàng
 app.post("/api/cart/clear", async (req, res) => {
-  await writeCart([]); // Xóa sạch giỏ hàng
-  res.json({ message: "Đặt tour thành công và giỏ hàng đã được làm trống!" });
+  const cart = await readCart();
+  const orders = await readOrders();
+
+  const newOrders = {
+    id: Date.now(),
+    date: new Date().toLocaleString(),
+    items: cart,
+  };
+
+  orders.push(newOrders);
+  await writeOrders(orders);
+  await writeCart([]);
+
+  res.json({ message: "Đặt tour thành công và giỏ hàng đã được làm trống" });
 });
 
 // Chạy server

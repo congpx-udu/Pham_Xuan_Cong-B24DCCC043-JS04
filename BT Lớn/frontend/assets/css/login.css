@@ -14,7 +14,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: -webkit-linear-gradient(left, #ffa17f, #c2e9fb);
+  background: linear-gradient(to right, #ffa17f, #c2e9fb);
 }
 
 label {
