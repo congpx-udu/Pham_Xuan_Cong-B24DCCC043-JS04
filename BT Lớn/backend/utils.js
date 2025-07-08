@@ -4,6 +4,7 @@ const path = require("path");
 const usersPath = path.join(__dirname, "users.json");
 const cartPath = path.join(__dirname, "data", "cart.json");
 const ordersPath = path.join(__dirname, "data", "orders.json");
+const lienHePath = path.join(__dirname, "data", "lienhe.json");
 
 async function readUsers() {
   const data = await fs.readFile(usersPath, "utf-8");
@@ -32,6 +33,15 @@ async function writeOrders(orders) {
   await fs.writeFile(ordersPath, JSON.stringify(orders, null, 2));
 }
 
+async function readLienHe() {
+  const data = await fs.readFile(lienHePath, "utf-8");
+  return JSON.parse(data || "[]");
+}
+
+async function writeLienHe(messages) {
+  await fs.writeFile(lienHePath, JSON.stringify(messages, null, 2));
+}
+
 module.exports = {
   readUsers,
   writeUsers,
@@ -39,4 +49,6 @@ module.exports = {
   writeCart,
   readOrders,
   writeOrders,
+  readLienHe,
+  writeLienHe,
 };

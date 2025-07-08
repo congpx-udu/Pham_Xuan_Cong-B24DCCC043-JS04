@@ -1,6 +1,5 @@
 .container {
   width: 100%;
-  height: auto;
   background: #fff;
   padding: 20px 200px;
   line-height: 1.7;
@@ -12,8 +11,8 @@
 
 .sub-cont {
   display: flex;
-  flex-direction: row;
   gap: 40px;
+  flex-wrap: wrap;
 }
 
 .thongtin {
@@ -21,12 +20,11 @@
 }
 
 .thongtin p {
-  color: #777777;
+  color: #777;
 }
 
 .location {
   display: flex;
-  flex-direction: row;
   gap: 20px;
   align-items: center;
   margin: 10px 0;
@@ -38,22 +36,21 @@
 }
 
 .lienhe {
+  flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 .ptlienhe {
   display: flex;
-  flex-direction: row;
-  gap: 200px;
-  align-items: center;
+  gap: 80px;
+  flex-wrap: wrap;
 }
 
 .sub-ptlh {
   display: flex;
-  flex-direction: row;
-  gap: 20px;
+  gap: 12px;
   align-items: center;
 }
 
@@ -62,67 +59,67 @@
 }
 
 .formlh form {
-  width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  flex-direction: column;
   gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 .form-items {
   flex: 1;
-  min-width: 0;
   display: flex;
   flex-direction: column;
 }
 
-.sub-cont {
-  width: 100%;
+.form-items label {
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-.sub-cont span {
-  color: #ff0000;
+.form-items span {
+  color: red;
 }
 
-.form-items {
-  line-height: 1.2;
-}
-
-.form-items input {
-  width: 200px;
-  height: 36px;
-  border: 2px solid #eeeeee;
+.form-items input,
+.form-items textarea {
+  border: 2px solid #eee;
   padding: 10px;
+  font-size: 14px;
+  border-radius: 4px;
 }
 
-.loinhan {
-  display: flex;
-  flex-direction: column;
-}
-
-.loinhan input {
-  width: 100%;
+textarea {
   height: 150px;
-  border: 2px solid #eeeeee;
-  padding: 10px;
+  resize: vertical;
 }
 
-.loinhan p {
-  margin: 10px 0;
+.full-width {
+  width: 100%;
 }
 
-.sub-cont button {
+.form-submit {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.form-submit button {
   width: 200px;
   height: 50px;
   font-size: 14px;
   border: none;
-  border-radius: 10px;
+  border-radius: 8px;
   color: #fff;
   background: #1ba0e2;
   text-transform: uppercase;
+  transition: background 0.3s;
 }
 
-.sub-cont button:hover {
+.form-submit button:hover {
   background: #1789c2;
   cursor: pointer;
 }

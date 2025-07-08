@@ -64,6 +64,25 @@
   font-size: 20px;
 }
 
+#header #nav .nav-item.giohang {
+  position: relative;
+}
+
+#nav .counttour {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: 50px;
+  right: 180px;
+  font-size: 24px;
+  color: #000;
+  background: #febd69;
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 #header #nav .nav-item > a {
   color: #000;
 }

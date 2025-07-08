@@ -36,11 +36,12 @@
             <i class="fa-regular fa-heart"></i>
             <p>Yêu thích</p>
           </div>
-          <div class="nav-item">
+          <div class="nav-item giohang">
             <a href="giohang.html">
               <i class="fa-solid fa-bag-shopping"></i>
             </a>
           </div>
+          <div class="counttour"><p>0</p></div>
         </div>
       </div>
       <div id="menu">
@@ -67,13 +68,11 @@
               <p>70 Lu Gia, Ward 15, District 11, Ho Chi Minh City</p>
             </div>
             <p>
-              Evo Tour được các du khách trong nước và quốc tế biết đến là một
-              Công ty tin cậy về chất lượng cũng như dịch vụ hoàn hảo. Chúng tôi
-              chuyên tổ chức các tour du lịch quốc tế, nội địa, cũng như tổ chức
-              cho các cơ quan đoàn thể đi tham quan, học tập, nghiên cứu, khảo
-              sát thị trường, hội nghị, hội thảo trong nước và ngoài nước.
+              Evo Tour chuyên tổ chức các tour du lịch trong và ngoài nước, uy
+              tín - chất lượng.
             </p>
           </div>
+
           <div class="lienhe">
             <div class="ptlienhe">
               <div class="sub-ptlh">
@@ -85,40 +84,52 @@
                 <p>support@sapo.vn</p>
               </div>
             </div>
+
+            <!-- FORM LIÊN HỆ -->
             <div class="formlh">
-              <form action="">
-                <div class="form-items">
-                  <label for="">Họ và tên<span>*</span></label>
-                  <input type="text" placeholder="Nhập họ và tên" />
+              <form id="formLienHe">
+                <div class="form-row">
+                  <div class="form-items">
+                    <label for="hoTen">Họ và tên<span>*</span></label>
+                    <input
+                      id="hoTen"
+                      type="text"
+                      placeholder="Nhập họ và tên"
+                    />
+                  </div>
+                  <div class="form-items">
+                    <label for="email">Email<span>*</span></label>
+                    <input
+                      id="email"
+                      type="text"
+                      placeholder="Nhập địa chỉ email"
+                    />
+                  </div>
+                  <div class="form-items">
+                    <label for="dienThoai">Điện thoại<span>*</span></label>
+                    <input
+                      id="dienThoai"
+                      type="text"
+                      placeholder="Nhập số điện thoại"
+                    />
+                  </div>
                 </div>
-                <div class="form-items">
-                  <label for="">Email<span>*</span></label>
-                  <input type="text" placeholder="Nhập địa chỉ email" />
+
+                <div class="form-items full-width">
+                  <label for="noiDung">Nội dung<span>*</span></label>
+                  <textarea
+                    id="noiDung"
+                    placeholder="Nội dung liên hệ"
+                  ></textarea>
                 </div>
-                <div class="form-items">
-                  <label for="">Điện thoại<span>*</span></label>
-                  <input type="text" placeholder="Nhập số điện thoại" />
+
+                <div class="form-submit">
+                  <button id="btnGui" type="button">Gửi tin nhắn</button>
                 </div>
               </form>
             </div>
-            <div class="loinhan">
-              <label for="">Nội dung<span>*</span></label>
-              <input type="text" placeholder="Nội dung liên hệ" />
-              <p>Không được để trống</p>
-            </div>
-            <button>Gửi tin nhắn</button>
           </div>
         </div>
-        <iframe
-          class="map"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14894.495635402403!2d105.79397891137698!3d21.047729206348308!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1svi!2s!4v1749300212173!5m2!1svi!2s"
-          width="600"
-          height="450"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
       </div>
       <div id="footer">
         <div class="ft-top">
@@ -214,6 +225,8 @@
         </div>
       </div>
     </div>
+    <script src="./assets/js/counttour.js"></script>
     <script src="./assets/js/taikhoan.js"></script>
+    <script src="./assets/js/lienhe.js"></script>
   </body>
 </html>
