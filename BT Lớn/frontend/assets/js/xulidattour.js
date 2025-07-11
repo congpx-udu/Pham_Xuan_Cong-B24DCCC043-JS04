@@ -23,6 +23,7 @@ document.querySelectorAll(".tour-items button").forEach((btn) => {
       .then((res) => res.json())
       .then((data) => {
         alert(data.message);
+        location.reload();
       })
       .catch((err) => {
         console.error("Lỗi:", err);
