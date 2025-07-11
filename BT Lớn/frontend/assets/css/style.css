@@ -150,6 +150,12 @@ a {
   color: #ff5722;
   border-radius: 4px;
 }
+
+.loaitour button:hover {
+  color: #f3f5f7;
+  background-color: #ff5722;
+}
+
 .subtour {
   width: 100%;
   display: flex;
